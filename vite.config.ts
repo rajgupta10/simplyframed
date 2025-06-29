@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  preview: {
+    host: true,
+    allowedHosts: ['simplyframe.onrender.com'], // 👈 This fixes the error
+  },
 });
