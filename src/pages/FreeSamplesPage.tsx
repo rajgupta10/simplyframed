@@ -12,7 +12,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-purple to-pastel-pink",
       downloads: "5.2k",
       rating: 4.9,
-      description: "A beautiful abstract geometric pattern perfect for modern designs."
+      description: "A beautiful abstract geometric pattern perfect for modern designs.",
+      image: "/IMG-20250709-WA0015.jpg"
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-mint to-pastel-sky",
       downloads: "3.8k",
       rating: 4.8,
-      description: "Elegant nature elements including leaves and botanical illustrations."
+      description: "Elegant nature elements including leaves and botanical illustrations.",
+      image: "/IMG-20250709-WA0014.jpg"
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-blush to-pastel-pink",
       downloads: "2.1k",
       rating: 5.0,
-      description: "A stunning wedding invitation template with elegant typography."
+      description: "A stunning wedding invitation template with elegant typography.",
+      image: "/IMG-20250709-WA0013.jpg"
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-lavender to-pastel-purple",
       downloads: "4.5k",
       rating: 4.7,
-      description: "Professional business and technology icons for your projects."
+      description: "Professional business and technology icons for your projects.",
+      image: "/IMG-20250709-WA0010.jpg"
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-peach to-pastel-coral",
       downloads: "1.9k",
       rating: 4.6,
-      description: "Fun and colorful birthday party invitation template."
+      description: "Fun and colorful birthday party invitation template.",
+      image: "/IMG-20250709-WA0007.jpg"
     },
     {
       id: 6,
@@ -57,7 +62,8 @@ const FreeSamplesPage = () => {
       gradient: "from-pastel-sage to-pastel-mint",
       downloads: "3.2k",
       rating: 4.8,
-      description: "Clean and modern minimalist logo template."
+      description: "Clean and modern minimalist logo template.",
+      image: "/IMG-20250709-WA0015.jpg"
     }
   ];
 
@@ -74,7 +80,7 @@ const FreeSamplesPage = () => {
 
   const contactWhatsApp = () => {
     const message = "Hi! I'm interested in your free samples and would like to know more about your premium designs.";
-    const whatsappUrl = `https://wa.me/918511428999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919082306871?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -124,7 +130,20 @@ const FreeSamplesPage = () => {
             <div key={sample.id} className="bg-white/80 backdrop-blur-sm rounded-3xl soft-shadow hover:shadow-xl transition-all duration-300 overflow-hidden group">
               <div className="relative">
                 <div className={`h-48 bg-gradient-to-br ${sample.gradient} flex items-center justify-center`}>
-                  <div className="text-white text-4xl font-serif font-bold opacity-90">
+                  {sample.image ? (
+                    <img 
+                      src={sample.image} 
+                      alt={sample.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  <div className={`${sample.image ? 'hidden' : 'flex'} absolute inset-0 items-center justify-center text-white text-4xl font-serif font-bold opacity-90`}>
                     {sample.title.charAt(0)}
                   </div>
                 </div>
@@ -195,7 +214,7 @@ const FreeSamplesPage = () => {
               <span>Contact on WhatsApp</span>
             </button>
             <div className="text-sm text-white/80">
-              <p>📱 +91 8511428999 | ⏰ 9 AM - 9 PM IST | 🚀 Quick Response</p>
+              <p>📱 +91 9082306871 | ⏰ 9 AM - 9 PM IST | 🚀 Quick Response</p>
             </div>
           </div>
         </div>

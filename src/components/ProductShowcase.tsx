@@ -6,7 +6,7 @@ import { vectorProducts, invitationProducts } from '../data/products';
 const ProductShowcase = () => {
   const contactWhatsApp = (product: any) => {
     const message = `Hi! I'm interested in "${product.title}" from your ${product.category} collection. Could you please provide more details?`;
-    const whatsappUrl = `https://wa.me/918511428999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919082306871?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -14,8 +14,21 @@ const ProductShowcase = () => {
     <div className="product-card bg-white/80 backdrop-blur-sm rounded-3xl soft-shadow hover:shadow-xl transition-all duration-300 overflow-hidden group">
       <Link to={`/product/${product.id}`}>
         <div className="relative">
-          <div className={`h-40 sm:h-48 bg-gradient-to-br ${product.gradient} flex items-center justify-center`}>
-            <div className="text-white text-3xl sm:text-4xl font-serif font-bold opacity-90">
+          <div className={`h-40 sm:h-48 bg-gradient-to-br ${product.gradient || 'from-pastel-purple to-pastel-pink'} flex items-center justify-center relative overflow-hidden`}>
+            {product.images && product.images.length > 0 ? (
+              <img 
+                src={product.images[0]} 
+                alt={product.title}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+            ) : null}
+            <div className={`${product.images && product.images.length > 0 ? 'hidden' : 'flex'} absolute inset-0 items-center justify-center text-white text-3xl sm:text-4xl font-serif font-bold opacity-90`}>
               {product.title.charAt(0)}
             </div>
           </div>

@@ -9,6 +9,7 @@ export default defineConfig({
   },
   preview: {
     host: true,
-    allowedHosts: ['simplyframe.onrender.com'], // 👈 This fixes the error
+    allowedHosts: ['simplyframe.onrender.com'], // allow your Render domain
+    // 🚫 Do not set port: 4173
   },
 });

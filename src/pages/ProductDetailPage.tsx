@@ -28,7 +28,7 @@ const ProductDetailPage = () => {
 
   const contactWhatsApp = () => {
     const message = `Hi! I'm interested in "${product.title}" from your ${product.category} collection. Could you please provide more details about availability and customization options?`;
-    const whatsappUrl = `https://wa.me/918511428999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919082306871?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -48,7 +48,20 @@ const ProductDetailPage = () => {
           {/* Product Images */}
           <div className="space-y-4">
             <div className={`aspect-square bg-gradient-to-br ${product.gradient} rounded-3xl flex items-center justify-center relative overflow-hidden soft-shadow`}>
-              <div className="text-white text-8xl font-serif font-bold opacity-90">
+              {product.images && product.images.length > 0 ? (
+                <img 
+                  src={product.images[selectedImage]} 
+                  alt={product.title}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+              ) : null}
+              <div className={`${product.images && product.images.length > 0 ? 'hidden' : 'flex'} absolute inset-0 items-center justify-center text-white text-8xl font-serif font-bold opacity-90`}>
                 {product.title.charAt(0)}
               </div>
               
@@ -178,7 +191,7 @@ const ProductDetailPage = () => {
                 Get instant responses and personalized service. Contact us directly on WhatsApp for customization, bulk orders, and special requests.
               </p>
               <div className="text-sm text-white/80">
-                <p>📱 WhatsApp: +91 8511428999</p>
+                <p>📱 WhatsApp: +91 9082306871</p>
                 <p>⏰ Available: 9 AM - 9 PM IST</p>
                 <p>🚀 Quick Response Guaranteed</p>
               </div>

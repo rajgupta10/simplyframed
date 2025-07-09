@@ -5,57 +5,57 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Priya Sharma",
       role: "Graphic Designer",
-      company: "Creative Studio Co.",
+      company: "Design Studio Mumbai",
       content: "Simply Framed has been a game-changer for my design projects. The quality is exceptional and the variety is incredible. I've saved countless hours with their ready-to-use vectors.",
       rating: 5,
-      avatar: "SJ"
+      avatar: "PS"
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Rajesh Kumar",
       role: "Marketing Director",
-      company: "TechStart Inc.",
+      company: "TechStart Bangalore",
       content: "The invitation templates are absolutely beautiful. We used them for our company events and received so many compliments. Professional quality at an affordable price.",
       rating: 5,
-      avatar: "MC"
+      avatar: "RK"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
+      name: "Anita Patel",
       role: "Wedding Planner",
-      company: "Elegant Events",
+      company: "Elegant Events Delhi",
       content: "My clients love the wedding invitation designs. They're elegant, customizable, and always deliver on time. Simply Framed is now my go-to resource for all design needs.",
       rating: 5,
-      avatar: "ER"
+      avatar: "AP"
     },
     {
       id: 4,
-      name: "David Park",
+      name: "Vikram Singh",
       role: "Small Business Owner",
-      company: "Park's Bakery",
+      company: "Singh's Bakery",
       content: "As a small business owner, I needed professional designs without the professional price tag. Simply Framed delivered exactly what I needed for my branding and marketing materials.",
       rating: 5,
-      avatar: "DP"
+      avatar: "VS"
     },
     {
       id: 5,
-      name: "Lisa Thompson",
+      name: "Meera Gupta",
       role: "Freelance Designer",
       company: "Independent",
       content: "The commercial license gives me peace of mind when working with clients. High-quality vectors that I can customize and use professionally. Highly recommend!",
       rating: 5,
-      avatar: "LT"
+      avatar: "MG"
     },
     {
       id: 6,
-      name: "James Wilson",
+      name: "Arjun Mehta",
       role: "Art Director",
-      company: "Brand Agency",
+      company: "Creative Agency Pune",
       content: "Impressive collection with fresh designs added regularly. The instant download feature is perfect for tight deadlines. Quality and convenience in one package.",
       rating: 5,
-      avatar: "JW"
+      avatar: "AM"
     }
   ];
 
@@ -117,8 +117,8 @@ const Testimonials = () => {
             </div>
             <div className="hidden sm:block h-8 w-px bg-neutral-200"></div>
             <div className="text-center text-reveal">
-              <div className="text-xl sm:text-2xl font-bold text-neutral-800">30-Day</div>
-              <div className="text-xs sm:text-sm text-neutral-600">Money Back Guarantee</div>
+              <div className="text-xl sm:text-2xl font-bold text-neutral-800">Instant</div>
+              <div className="text-xs sm:text-sm text-neutral-600">Download Access</div>
             </div>
           </div>
         </div>

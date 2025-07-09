@@ -50,8 +50,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-800 mb-1">Email</h3>
-                    <p className="text-neutral-600">hello@simplyframed.com</p>
-                    <p className="text-neutral-600">support@simplyframed.com</p>
+                    <p className="text-neutral-600">simply.framed.3@gmail.com</p>
                   </div>
                 </div>
                 
@@ -61,8 +60,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-800 mb-1">Phone</h3>
-                    <p className="text-neutral-600">+1 (555) 123-4567</p>
-                    <p className="text-neutral-600">Mon-Fri, 9AM-6PM PST</p>
+                    <p className="text-neutral-600">+91 9082306871</p>
+                    <p className="text-neutral-600">24/7 Available</p>
                   </div>
                 </div>
                 
@@ -72,8 +71,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-800 mb-1">Address</h3>
-                    <p className="text-neutral-600">123 Design Street</p>
-                    <p className="text-neutral-600">San Francisco, CA 94102</p>
+                    <p className="text-neutral-600">Online Service</p>
+                    <p className="text-neutral-600">Mumbai, India</p>
                   </div>
                 </div>
               </div>
@@ -87,16 +86,16 @@ const ContactPage = () => {
               </h3>
               <div className="space-y-2 text-neutral-600">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span>Monday - Sunday</span>
+                  <span>24 Hours</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span>WhatsApp Support</span>
+                  <span>24/7 Available</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>Email Response</span>
+                  <span>Within 24 Hours</span>
                 </div>
               </div>
             </div>

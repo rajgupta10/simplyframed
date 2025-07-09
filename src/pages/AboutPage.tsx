@@ -4,28 +4,10 @@ import { Users, Award, Heart, Zap } from 'lucide-react';
 const AboutPage = () => {
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Shweta Jadhav",
       role: "Founder & Creative Director",
-      bio: "With over 10 years in design, Sarah leads our creative vision and ensures every product meets our high standards.",
+      bio: "With over 10 years in design, Shweta leads our creative vision and ensures every product meets our high standards.",
       avatar: "SJ"
-    },
-    {
-      name: "Michael Chen",
-      role: "Lead Designer",
-      bio: "Michael brings technical expertise and artistic flair to our vector art collections.",
-      avatar: "MC"
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Product Manager",
-      bio: "Emily manages our product development and ensures we're always delivering what our customers need.",
-      avatar: "ER"
-    },
-    {
-      name: "David Park",
-      role: "Customer Success",
-      bio: "David leads our customer support team and helps ensure every customer has an amazing experience.",
-      avatar: "DP"
     }
   ];
 
@@ -78,7 +60,7 @@ const AboutPage = () => {
                 marketers, and creative professionals.
               </p>
               <p>
-                Our journey started when our founder, Sarah Johnson, noticed the gap between expensive 
+                Our journey started when our founder, Shweta Jadhav, noticed the gap between expensive 
                 custom design work and low-quality templates available online. She envisioned a platform 
                 that would offer premium designs at affordable prices, with the flexibility and quality 
                 that professionals demand.
